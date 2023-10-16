@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            //validation function 
+                function show()
+                {
+                    //alert("success!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                    let x = document.forms["myForm"]["fname"].value;
+                    let y = document.forms["myForm"]["address"].value;
+                    let z = document.forms["myForm"]["gender"].value;
+                    let a = document.forms["myForm"]["dob"].value;
+                    let pno = document.forms["myForm"]["pno"].value;
+                    //alert(z);
+                        if (x == "") 
+                        {
+                            alert("Name must be filled out");
+                            fname.focus();
+                            return false;
+                        }
+                        if (y == "") 
+                        {
+                            alert("Address field can't make empty");
+                            return false;
+                        }
+                        if (z == "") 
+                        {
+                            alert("A gender should selected");
+                            return false;
+                        }
+                        if (a == "") 
+                        {
+                            alert("DOB is nessary");
+                            return false;
+                        }
+                        if (pno == "") 
+                        {
+                            alert("Should have a phone number");
+                            return false;
+                        }
+                }
+
+    </script>
+    <form id="myForm" action="index.html" onsubmit="return show()"> 
+    <table border="2px bold" align="center">
+                <thead>
+                        <tr>
+                            <th colspan="2">
+                                REGISTRATION FORM
+                            </th>
+                        </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <label>ENTER THE NAME</label>
+                        </td>
+                        <td>
+                            <input type="text" name="fname" id="fname" >
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>GENDER</label>
+                        </td>
+                        <td>
+                          <select name="gender" id="gender" style="width: 99%;">
+                            <option value="">-SELECT-</option>
+                            <option value="male">-MALE-</option>
+                            <option value="female">-FEMALE-</option>
+                          </select>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>DATE OF BIRTH</label>
+                        </td>
+                        <td>
+                            <input type="date" name="dob" id="dob"  style="width: 98%;">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>ADDRESS</label>
+                        </td>
+                        <td>
+                        <textarea cols="20" rows="6" name="address" id="address"></textarea>    
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>PHONE NUMBER</label>
+                        </td>
+                        <td>
+                            <input type="number" name="pno" id="pno" >
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>HOBBIES</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="cricket" >CRICKET<br>
+                            <input type="checkbox" name="reading" >READING<br>
+                            <input type="checkbox" name="movies" >MOVIES<br>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>EXTRA CARICCULAR ACTIVITIES</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="drawing" >DRAWING<br>
+                            <input type="checkbox" name="painting" >PAINTING<br>
+                            <input type="checkbox" name="dancing" >DANCING<br>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="" align="center">
+                            <button onclick="">SUBMIT</button>
+                        </td>
+                        <td colspan="" align="center">
+                            <button type="reset">RESET</button>
+                        </td>
+                    </tr>
+                </tbody>
+    </table>
+    </form>
+</body>
+</html>

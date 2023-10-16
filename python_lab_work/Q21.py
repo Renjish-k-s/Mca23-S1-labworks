@@ -1,0 +1,5 @@
+ele=list(input("enter the numbers"))
+print(ele)
+ele_s=sorted(ele)
+print(ele_s)
+print("second smallest element=",ele_s[1])

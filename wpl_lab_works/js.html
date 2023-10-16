@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+        function var1()
+        {
+        if(document.forms.form1.fname.value=="")
+        {
+            window.alert("Povide any value");
+            document.forms.form1.fname.focus();
+        }
+        var age=document.getElementById("age").value;
+        
+        if(num.isInteger(age)=='false')
+        {
+            window.alert("must be integer value");
+            document.forms.form1.age.focus();
+        }
+        
+
+        return false;
+        }
+
+      
+
+</script>
+<body>
+    <form  id="form1" onsubmit="return var1()" method="post">
+
+            <table border="1px bold" align="center">
+                <tr>
+                    <td>
+                                <label> NAME</label>
+                    </td>
+                    <td>
+                        <input type="text" id="fname" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                                <label> AGE</label>
+                    </td>
+                    <td>
+                        <input type="text" id="age" >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="">
+                        <input type="submit" name="submit" value="submit">
+                    </td>
+                   
+                </tr>
+                
+            </table>
+
+    </form>
+    
+</body>
+</html>

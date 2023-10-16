@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<style>
+.table_style
+{
+    width:50% ;
+    background-color: bisque;
+    margin: auto;
+}
+.btn
+{
+
+width: 40%;
+height: 100%;
+background-color: blue;
+color: white;
+}
+.btn_r
+{
+ width: 40%;
+height: 100%;
+background-color: blue;
+color: white;
+
+}
+.btn_r:hover
+{
+background-color: red;
+}
+</style>
+<body >
+    <script>
+        function show()
+        {
+            var roll=document.getElementById("roll").value;
+            r.innerHTML=roll;
+
+            var name=document.getElementById("name").value;
+            n.innerHTML=name;
+
+            var age=document.getElementById("age").value;
+            a.innerHTML=age;
+           
+        }
+        function reset()
+        {
+            docum
+        }
+
+    </script>
+    <from action="" id="text">
+    <table border="2px bold" class="table_style">
+        <thead>
+            <tr>
+                <th colspan="2">
+                    <h2>REGISTRATION FORM</h2>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <label>ROLL NO</label>
+                </td>
+                <td>
+                    <input type="text" name="rollno" id="roll" style="width: 98%;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>NAME</label>
+                </td>
+                <td>
+                    <input type="text" name="rollno" id="name" style="width: 98%;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>AGE</label>
+                </td>
+                <td>
+                    <input type="text" name="rollno" id="age" style="width: 98%;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>ADDRESS</label>
+                </td>
+                <td>
+                    <input type="text" name="rollno" style="width: 98%;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>GENDER</label>
+                </td>
+                <td>
+                    <select style="width: 99%;">
+                        <option>MALE</option>
+                        <option>FEMALE</option>
+                        <option>CUSTOM</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>COURSE TYPE</label>
+                </td>
+                <td>
+                    <select style="width: 99%;">
+                        <option>BCA</option>
+                        <option>MCA</option>
+                        <option>PHD</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td  align="center">
+                    <button class="btn" onclick="show()">SUBMIT</button>                 
+                </td>
+                <td  align="center">
+                    <button class="btn_r" onclick="reset()">RESET</button>                 
+                </td>
+            </tr>
+            <tr>
+                <td colspan="" align="center">
+                    <label >ROLL NO</label>
+            </td>
+                <td colspan="" align="center">
+                        <label id="r "></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="" align="center">
+                    <label >NAME</label>
+            </td>
+                <td colspan="" align="center">
+                        <label id="n"></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="" align="center">
+                    <label >AGE</label>
+            </td>
+                <td colspan="" align="center">
+                        <label id="a"></label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </from>
+</body>
+</html>
