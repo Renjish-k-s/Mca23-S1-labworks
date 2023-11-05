@@ -37,6 +37,12 @@
             <th>ITEM NAME</th>
             <th>QUANTITY</th>
         </tr>
+<?php
+
+for ($i=0; $i <6 ; $i++) { 
+    
+
+?>
         <tr class="row">
            <th> <select class="text_1" name="itemname[]">
                     <option>-SELECT ITEM-</option>
@@ -51,47 +57,11 @@
 
          </tr>
 
-        <tr class="row">
-           <th> <select class="text_1" name="itemname[]">
-                    <option>-SELECT ITEM-</option>
-                   <option value="1">PEN</option>
-                   <option value="2">PENCIL</option>
-                   <option value="3">RUBBER</option>
-                   <option value="4">SCALE</option>
+<?php
 
-
-               </select></th>
-            <th> <input type="number" name="quantity[]" placeholder="ENTER QUANTITY"class="text_1"></th>
-
-         </tr>
-
-          <tr class="row">
-           <th> <select class="text_1" name="itemname[]">
-                    <option>-SELECT ITEM-</option>
-                   <option value="1">PEN</option>
-                   <option value="2">PENCIL</option>
-                   <option value="3">RUBBER</option>
-                   <option value="4">SCALE</option>
-
-
-               </select></th>
-            <th> <input type="number" name="quantity[]" placeholder="ENTER QUANTITY"class="text_1"></th>
-
-         </tr>
-
-       <tr class="row">
-           <th> <select class="text_1" name="itemname[]">
-                   <option>-SELECT ITEM-</option>
-                   <option value="1">PEN</option>
-                   <option value="2">PENCIL</option>
-                   <option value="3">RUBBER</option>
-                   <option value="4">SCALE</option>
-
-
-               </select></th>
-            <th> <input type="number" name="quantity[]" placeholder="ENTER QUANTITY"class="text_1"></th>
-
-         </tr>
+    }
+?>
+         <tr>
             <th colspan=2 class="row">
                 <button type="submit" name="get" style="color: white;background-color: blue;height: 95%;">GET BILL INVOICE</button>
             </th>
