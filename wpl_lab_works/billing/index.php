@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BILLING DESKTOP</title>
 </head>
 <body>
+    <style>
+         table
+         {
+             height: 50%;
+             width: 60%;
+         }
+         .text_1
+         {
+             height:100%;
+             width: 100%;
+         }
+         
+        .row
+        {
+            height: 50px;
+            
+        }
+        
+        </style>
+        <form action="bill_1.php" method="post">
     <table border=solid 2px align=center>
         <tr>
             <th colspan=2>
@@ -13,34 +33,72 @@
             </th>
         </tr>
 
-        <tr>
+        <tr class="row">
             <th>ITEM NAME</th>
             <th>QUANTITY</th>
         </tr>
-         <tr>
-            <input type="text" name="itemname" placeholder="ITEM NAME">
-            <input type="text" name="quantity" placeholder="ENTER QUANTITY">
+        <tr class="row">
+           <th> <select class="text_1" name="itemname[]">
+                    <option>-SELECT ITEM-</option>
+                   <option value="1">PEN</option>
+                   <option value="2">PENCIL</option>
+                   <option value="3">RUBBER</option>
+                   <option value="4">SCALE</option>
+
+
+               </select></th>
+            <th> <input type="number" name="quantity[]" placeholder="ENTER QUANTITY"class="text_1"></th>
+
          </tr>
 
-         <tr>
-            <input type="text" name="itemname" placeholder="ITEM NAME">
-            <input type="text" name="quantity" placeholder="ENTER QUANTITY">
+        <tr class="row">
+           <th> <select class="text_1" name="itemname[]">
+                    <option>-SELECT ITEM-</option>
+                   <option value="1">PEN</option>
+                   <option value="2">PENCIL</option>
+                   <option value="3">RUBBER</option>
+                   <option value="4">SCALE</option>
+
+
+               </select></th>
+            <th> <input type="number" name="quantity[]" placeholder="ENTER QUANTITY"class="text_1"></th>
+
          </tr>
 
-         <tr>
-            <input type="text" name="itemname" placeholder="ITEM NAME">
-            <input type="text" name="quantity" placeholder="ENTER QUANTITY">
+          <tr class="row">
+           <th> <select class="text_1" name="itemname[]">
+                    <option>-SELECT ITEM-</option>
+                   <option value="1">PEN</option>
+                   <option value="2">PENCIL</option>
+                   <option value="3">RUBBER</option>
+                   <option value="4">SCALE</option>
+
+
+               </select></th>
+            <th> <input type="number" name="quantity[]" placeholder="ENTER QUANTITY"class="text_1"></th>
+
          </tr>
 
-         <tr>
-            <input type="text" name="itemname" placeholder="ITEM NAME">
-            <input type="text" name="quantity" placeholder="ENTER QUANTITY">
+       <tr class="row">
+           <th> <select class="text_1" name="itemname[]">
+                   <option>-SELECT ITEM-</option>
+                   <option value="1">PEN</option>
+                   <option value="2">PENCIL</option>
+                   <option value="3">RUBBER</option>
+                   <option value="4">SCALE</option>
+
+
+               </select></th>
+            <th> <input type="number" name="quantity[]" placeholder="ENTER QUANTITY"class="text_1"></th>
+
          </tr>
-         <tr>
-            <th colspan=2>
-                <button type="submit" name="get">GET BILL INVOICE</button>
+            <th colspan=2 class="row">
+                <button type="submit" name="get" style="color: white;background-color: blue;height: 95%;">GET BILL INVOICE</button>
             </th>
          </tr>
     </table>
+    </form>
+
+    
 </body>
 </html>
