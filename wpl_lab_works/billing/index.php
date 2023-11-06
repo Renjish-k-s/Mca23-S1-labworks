@@ -45,7 +45,7 @@ for ($i=0; $i <6 ; $i++) {
 ?>
         <tr class="row">
            <th> <select class="text_1" name="itemname[]">
-                    <option>-SELECT ITEM-</option>
+                    <option value="0">-SELECT ITEM-</option>
                    <option value="1">PEN</option>
                    <option value="2">PENCIL</option>
                    <option value="3">RUBBER</option>
@@ -53,7 +53,7 @@ for ($i=0; $i <6 ; $i++) {
 
 
                </select></th>
-            <th> <input type="number" name="quantity[]" placeholder="ENTER QUANTITY"class="text_1"></th>
+            <th> <input type="number" min=0  name="quantity[]" placeholder="ENTER QUANTITY"class="text_1"></th>
 
          </tr>
 

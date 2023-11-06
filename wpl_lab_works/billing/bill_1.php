@@ -11,8 +11,6 @@
         width:50%;
     }
 </style>
-
-
 <body>
     <table border=2px solid  align=center>
         <tr>
@@ -65,7 +63,14 @@ if (isset($_POST['get']))
         $qt=$_POST['quantity'];
         $c=count($item_name);
         $j=1;
-        for ($i=0; $i <$c ; $i++) {             
+        for ($i=0; $i <$c ; ++$i) {
+            
+            $m=$item_name[$i]; 
+            
+            if ($m!=0) 
+            {
+                
+            
 ?>
 
 
@@ -94,7 +99,7 @@ if (isset($_POST['get']))
             </th>
         </tr>
 <?php
-
+            }
     }
 }
 ?>
