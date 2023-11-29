@@ -15,14 +15,20 @@
             DATA SURVEY
         </th>
     </tr>
+<?php
 
+    $sql="SELECT * FROM s1mca_stud ;";
+    $req=$con->query($sql);
+    $row=mysqli_fetch_array($req);
+    $count=mysqli_num_rows($req);
+?>
 
     <tr>
         <th>
             ID
         </th>
         <th>
-            <input type="text" name="id" value="" id="" required="on">
+            <input type="text" name="id" value="<?php echo $count+=1;  ?>" id="" required="on">
         </th>
         
     </tr>
