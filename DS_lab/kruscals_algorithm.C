@@ -5,7 +5,7 @@ int find(int);
 int unio(int,int);
 int main()
 {
-clrscr();
+//clrscr();
 printf("ENTER THE NO. OF VERTICES\n");
 scanf("%d",&n);
 printf("\nENTER THE ELEMENTS\n");
@@ -54,7 +54,7 @@ while(ne<n)
 
 printf("\nMINCOST=%d",mincost);
 
-getch();
+//getch();
 }
 int find(int i)
 {

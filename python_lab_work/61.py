@@ -1,7 +1,7 @@
 
 try:
     num=int(input("enter the number"))
-    if 90>num:
+    if 90>num<120:
         raise ValueError
     else:
         print("valid input")

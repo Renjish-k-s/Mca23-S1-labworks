@@ -11,7 +11,7 @@ int cost[5][5]={
 		     {5,0,0,2},
 		     {0,11,2,0}
 		    };
-clrscr();
+//clrscr();
 for(i=1;i<=4;++i){
 	for(j=1;j<=4;++j){
 		if(cost[i][j]==0)
@@ -59,5 +59,5 @@ while(x<4){
 	}
 	printf("Minimum cost : %d",mincost);
 
-getch();
+//getch();
 }
