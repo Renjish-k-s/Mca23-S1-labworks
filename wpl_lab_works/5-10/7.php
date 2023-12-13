@@ -43,9 +43,16 @@ else
 // else {
 //     print("connection error".$con->connect_error);
 // }
-$sql="ALTER TABLE TEST ADD AGE VARCHAR(20)";
-if ($con->query($sql)) 
-{
-    echo"<script>alert('ALTERED THE TABLE')</script>";
+// $sql="ALTER TABLE TEST ADD AGE VARCHAR(20)";
+// if ($con->query($sql)) 
+// {
+//     echo"<script>alert('ALTERED THE TABLE')</script>";
+// }
+
+$sql="DELETE FROM TEST";
+
+if ($con->query($sql)) {
+    
+   echo"<script>alert('DELETED')</script>";
 }
 ?>
