@@ -72,50 +72,36 @@ void search(struct node *root,int cele)
     }
    
 }
-// struct node *delete(struct node *root,int cele)
-// {
-//     if(root<root->left)
-//     {
-//         root->left=delete(root->left,cele);
-//     }
-//     else if(root>root->right)
-//     {
-//         root->right=delete(root->right,cele);
-//     }
-//     else
-//     {
-//         if(root->left==NULL&&root->right==NULL)
-//         {
-//             struct node *temp=root;
-//             root=NULL;
-//             free(temp);
-//             printf("DELETED");
-            
-//         }
-//         else if(root->left==NULL)
-//         {
-//             struct node *temp=root;
-//             root=temp->right;
-//             free(temp);
-//                  printf("DELETED 1");
-//         }
-//         else if(root->right==NULL)
-//         {
-//             struct node *temp=root;
-//             root=temp->left;
-//             free(temp);
-//                  printf("DELETED 2");
-//         }
-//         else
-//         {
-//             struct node *temp=root;
-//             root=temp->right;
-//             free(temp);
-//                  printf("DELETED 3");
-//         }
-//     }
-//     return root;
-// }
+struct node *deleteNode(struct node *root, int cele) {
+    if (root == NULL) {
+        printf("\nNOT FOUND\n");
+        return root;
+    }
+
+    if (cele < root->data) {
+        root->left = deleteNode(root->left, cele);
+    } else if (cele > root->data) {
+        root->right = deleteNode(root->right, cele);
+    } else {
+        if (root->left == NULL) {
+            struct node *temp = root->right;
+            free(root);
+            printf("DELETED");
+            return temp;
+        } else if (root->right == NULL) {
+            struct node *temp = root->left;
+            free(root);
+            printf("DELETED");
+            return temp;
+        }
+
+        struct node *temp = findMin(root->right);
+        root->data = temp->data;
+        root->right = deleteNode(root->right, temp->data);
+    }
+    return root;
+}
+
 int main()
 {
     int ch;
@@ -142,11 +128,11 @@ int main()
         case 3:
             inorder(root);
             break;
-        // case 4:
-        //     printf("\nenter the element to delete\n");
-        //     scanf("%d",&cele);
-        //     delete(root,cele);
-        //     break;
+        case 4:
+            printf("\nenter the element to delete\n");
+            scanf("%d",&cele);
+            root=delete(root,cele);
+            break;
         case 5:
             return 0;
     
