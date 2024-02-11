@@ -41,7 +41,7 @@ void main()
 	rear++;
 	queue[rear]=v;
 	newarr[x]=v;
-	bfs(v);
+	bfs(v); 
 	printf("\nVisited array\n");
 	for(j=1;j<=n;++j)
 	{

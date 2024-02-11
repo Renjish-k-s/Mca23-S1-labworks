@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "kruscals_algorithm.C": "cpp"
+        "kruscals_algorithm.C": "cpp",
+        "prims_algorithm_implementation.C": "cpp",
+        "TEST1.C": "cpp",
+        "P.C": "cpp"
     }
 }

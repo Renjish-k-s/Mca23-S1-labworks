@@ -1,6 +1,5 @@
 #include<stdio.h>
- 
-#include<conio.h>
+ #include<conio.h>
  
 int a,b,u,v,n,i,j,ne=1;
  
